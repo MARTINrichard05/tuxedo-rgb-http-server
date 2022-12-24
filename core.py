@@ -15,7 +15,7 @@ def run(server_class=HTTPServer, handler_class=S, port=6670):
     httpd = server_class(server_address, handler_class)
     logging.info('Starting daemon\n')
     try:
-        httpd.serve_forever()
+        httpd.serve_forever() # now the server on the port 6670 is started
     except KeyboardInterrupt:
         pass
     httpd.server_close()
