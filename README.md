@@ -4,7 +4,7 @@ i have an aura 15 gen 2\
 it is optimised and can run in the background without any performance impact\
 if you want to use it just mention me
 ## the goal
-to control your tuxedo keyboard backlight by sending local http request, allows you to do way more than just a fixed color
+to control your tuxedo keyboard backlight by sending local http request,it allows you to do many things, if anyone is intersted in a more complex version ( for laptops that have individial leds per key ) just tel me and i can do one
 ## installation
 just run `sudo ./install.sh` 
 it will change the files's owner to prevent access from non admin user.
