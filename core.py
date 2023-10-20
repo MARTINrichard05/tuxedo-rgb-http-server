@@ -7,7 +7,7 @@ class S(BaseHTTPRequestHandler): #handler
     def do_GET(self):
         buffer = (unquote(self.path)[:-1]).lstrip("/").lstrip("[")
         buffer = buffer.split(",")
-        tuxedo_keyboard.setcolor(tuxedo_keyboard.rgb_to_hex((int(buffer[0]),int(buffer[1]),int(buffer[2]))))
+        tuxedo_keyboard.setcolor(str(int(buffer[0]))+" "+str(int(buffer[1]))+" "+str(int(buffer[2])))
 
 def run(server_class=HTTPServer, handler_class=S, port=6670):
     logging.basicConfig(level=logging.INFO)

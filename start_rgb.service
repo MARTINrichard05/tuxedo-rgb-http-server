@@ -3,7 +3,7 @@ Description=Start rgb server
 
 [Service]
 Type=oneshot
-ExecStart=/bin/python3.10 /etc/rgb_http_server/core.py
+ExecStart=/bin/python /etc/rgb_http_server/core.py
 
 [Install]
 WantedBy=multi-user.target
